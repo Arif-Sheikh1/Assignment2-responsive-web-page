@@ -34,11 +34,19 @@ nav{
 
 }
 .nav-social-link{
+    display: flex;
     margin: 10px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 0 10px;
+    align-items: center;
+    justify-content: center;
 }
+.nav-social-link i{
+    padding:0 5px;
+
+}
+
                 /* Styles for  Header section   */
 .header-container{
     display: flex;
@@ -285,6 +293,112 @@ nav{
     width:800px;
     
 }
+                    /* game-catagories name here */
+
+.game-catagories{
+    width: 100%;
+    padding-top:80px;
+    padding-bottom:80px;
+    height: 250px;
+}
+
+.five-catagories{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:25px;
+}
+.five-catagories div {
+    display: flex;
+    padding:5px;
+    /* border: 1px solid aquamarine; */
+    margin-left:20px;
+    
+}
+.five-catagories div:hover{
+    color: #FF42A5;
+    border-radius: 50px;
+    border: 1.5px solid var(--Linear, #FF42A5);
+    background: #FFF;
+}
+.five-catagories div p{
+    margin-left: 10px;
+}
+             /* footer section */
+
+.footer{
+    background: #0B0223;
+    padding:40px;
+}             
+.logo{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.logo-img{
+    height:30px;
+    width: 60px;
+}
+.logo h1{
+    margin:0px;
+    color: #FFF;
+}
+.iteam-list, .iteam-list1,.iteam-list2{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: #FFF;
+    font-size:1.4rem;
+}
+
+.privacy, .privacy1,.privacy2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size:1rem;
+    /* padding-left:10px; */
+
+} 
+.ending-text{
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    color: rgba(255, 255, 255, 0.60);
+    font-size:1rem;
+
+}
+.iteam-list1 p,.iteam-list2 p{
+    padding-left: 20px;
+}
+.privacy1 p,.privacy2 p{
+    padding-left: 20px;
+}
+.icons{
+    display: flex;
+    padding-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.icons-1 i{
+    padding-left: 5px;
+    color:white;
+    width: 57.13px;
+    height: 38.709px;
+    
+
+}
+.icons-2 i{
+    padding-left: 5px;
+    color:white;
+    width: 57.13px;
+    height: 38.709px;
+    
+
+}
+
 
 
 
@@ -305,7 +419,7 @@ nav{
         margin: 40px 50px ;
         text-align: center;
     }
-    nav, .nav-iteam, .Gamer, .online-game, .Play-container,.career-container {
+    nav, .nav-iteam, .Gamer, .online-game, .Play-container,.career-container{
         flex-direction: column;
     }
     .nav-iteam ul {
@@ -400,6 +514,44 @@ nav{
         width:100%;
         height:auto;
     }
+               /* Game catagories section responsive */
+    .game-catagories{
+    flex-direction:column;
+    width:auto;
+    }
+    .five-catagories{
+        width:auto;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin:0px;
+        padding-left:40px;
+          
+    }
+    .five-catagories div{
+        padding:10px;
+        margin-bottom:10px;
+        text-align: center;
+    }
+                /* try to make responsive footer section */
+    .footer{
+        margin-top:550px;
+        width:auto;
+    }
+    .iteam-list, .privacy{
+        flex-direction: column;
+    }
+    .ending-text P{
+        text-align: center;
+    }
+    .icons{
+        flex-direction: column;
+    }
+
+
+
+
+
 }
 
 
@@ -477,7 +629,24 @@ nav{
     }
     .career-content{
         width: 100%;
-        padding:10px 400px 50px 400px;
+        /* padding:10px 400px 50px 400px; */
+    }
+    .career-content p{
+        margin-right:30px;
+
+    }
+               /* Games catagories section responsive */
+    .game-catagories{
+        width:100%;
+        
+    }
+    .five-catagories {
+        width:100%;
+        
+    }
+    .five-catagories div{
+        padding:0px;
+        margin:0px;
     }
 
 }
